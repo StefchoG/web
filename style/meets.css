@@ -28,14 +28,18 @@ li a {
 }
 
 div {
-	margin-left:10%;
-	padding:1px 16px;
-	height:1000px;
-	margin-left:10%;
-	padding:1px 16px;
-	height:1000px;
+    position: fixed;
+    left: 11%;
+	height:100%;
+	width:30%;
+    background-color: white;
 }
 
-h1 {
-	color: white;
+p {
+	color: black;
+    font-size: 250%;
 }
+#map {
+        height: 400px;
+        width: 100%;
+       }

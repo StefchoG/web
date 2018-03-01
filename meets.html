@@ -12,6 +12,19 @@
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
+    <script>
+		function myMap() {
+
+			var mapOptions = {
+   				center: new google.maps.LatLng(42.65153, 23.28747),
+   				zoom: 1,
+    			mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+			
+
+		}
+	</script>
 	<title>Tesla Haters</title>
 </head>
 <body>
@@ -23,7 +36,29 @@
 	</ul>
 
 	<div>
-		<h1>Довечера на OMV-Бояна 23:00!<br> Credits: Stefoto </h1>
+		<p>Довечера на OMV-Бояна 23:00!<br> Credits: Stefoto </p>
+		<div id="map"></div>
+    	<script>
+     		function initMap() {
+       		var uluru = {lat: -25.363, lng: 131.044};
+       		var map = new google.maps.Map(document.getElementById('map'), {
+       		zoom: 4,
+       		center: uluru
+       		});
+       		var marker = new google.maps.Marker({
+       		position: uluru,
+       		map: map
+       		});
+      	}
+    	</script>
+    	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMIZkiSRSEwkRE0fYK6OJFmpfXsTu1xsU&callback=initMap">
+    </script>
+    
+
+
 	</div>
+
+	
 </body>
 </html>
