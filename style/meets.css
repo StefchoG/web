@@ -27,12 +27,24 @@ li a {
 
 }
 
-div {
+#divaka {
     position: fixed;
     left: 11%;
 	height:100%;
-	width:30%;
+	width:26%;
     background-color: white;
+    border-radius: 2%;
+    font-family: Impact;
+  
+}
+#ludaka {
+    position: fixed;
+    left: 38%;
+    height:100%;
+    width:26%;
+    background-color: white;
+    border-radius: 2%;
+    font-family: Impact;
 }
 
 p {
